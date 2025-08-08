@@ -1,3 +1,7 @@
+# SlidesDeckComposer
+
+## [Demo Video](https://drive.google.com/file/d/1J619wBLCKdhCdCXxhO0HE3tY_ZIaaTJW/view?usp=sharing)
+
 https://developers.google.com/slides/api/quickstart/python
 
 https://developers.google.com/slides/api/guides/create-slide
@@ -26,4 +30,3 @@ These are some more details:
 5. Slide Generation for Customers:
    - Search and Match: When a new customer request comes in, search the database for relevant slides based on customer requirements.
    - Dynamic Assembly: Assemble slides dynamically to create a customized presentation for the customer.# luke_AI_slides_deck_project
-# SlidesDeckComposer
