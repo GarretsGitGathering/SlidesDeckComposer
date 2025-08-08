@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "tying_shoe_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "tying_shoe_title"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "tying_shoe_body"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "tying_shoe_title",
+            "text": "Step-by-step Guide on How to Tie Your Shoe"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "tying_shoe_body",
+            "text": "- Visuals and diagrams to demonstrate the process"
+        }
+    }
+]

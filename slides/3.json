@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "agenda_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "agenda_title"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "agenda_body"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "agenda_title",
+            "text": "Agenda:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "agenda_body",
+            "text": "1. Introduction\n2. Background/Context\n3. Main Content Slides\n4. Data/Statistics\n5. Case Studies/Examples\n6. Analysis/Findings\n7. Conclusion\n8. Recommendations/Next Steps\n9. Q&A\n10. Thank You"
+        }
+    }
+]

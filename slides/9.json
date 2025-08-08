@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "tying_shoe_conclusion_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "tying_shoe_conclusion_title"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "tying_shoe_conclusion_body"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "tying_shoe_conclusion_title",
+            "text": "Conclusion:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "tying_shoe_conclusion_body",
+            "text": "- Recap the steps for tying your shoe\n- Emphasize the importance of this skill"
+        }
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "createSlide": {
+            "objectId": "importance_of_tying_shoes_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "importance_title_id"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "importance_body_id"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "importance_title_id",
+            "text": "Importance of Tying Shoes:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "importance_body_id",
+            "text": "- Prevents tripping and falling\n- Ensures shoes stay securely on feet\n- Promotes independence and self-sufficiency"
+        }
+    },
+    {
+        "createSlide": {
+            "objectId": "methods_of_tying_shoes_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "methods_title_id"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "methods_body_id"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "methods_title_id",
+            "text": "Methods of Tying Shoes:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "methods_body_id",
+            "text": "- Standard shoelace knot\n- Bunny ears method\n- Loop, swoop, and pull technique"
+        }
+    }
+]

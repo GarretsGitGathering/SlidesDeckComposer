@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "thank_you_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "thank_you_title"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "thank_you_body"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "thank_you_title",
+            "text": "Thank You:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "thank_you_body",
+            "text": "- Thank the audience for their time and attention\n- For further inquiries or assistance, please contact:\nEmail: example@email.com\nPhone: 123-456-7890"
+        }
+    }
+]

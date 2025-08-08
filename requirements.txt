@@ -1,0 +1,11 @@
+firebase_admin
+Flask
+flask_cors
+google_api_python_client
+google_auth_oauthlib
+langchain==0.3.7
+langchain_community==0.3.7
+langchain_core==0.3.19
+langchain_openai==0.2.9
+protobuf==3.20.3
+pydantic

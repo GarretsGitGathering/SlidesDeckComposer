@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "how_to_tie_shoe_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "title_id"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "body_id"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "title_id",
+            "text": "How to Tie Your Shoe"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "body_id",
+            "text": "Objectives: To teach the audience the proper technique for tying their shoes"
+        }
+    }
+]

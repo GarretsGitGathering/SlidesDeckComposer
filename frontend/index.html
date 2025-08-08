@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Creator AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <!-- Left Section -->
+        <div class="container left">
+            <!-- Credentials Upload and Token Refresh -->
+            <h2>Credentials and Token</h2>
+            <p>
+                Provide your Google Slides Credentials so the slides may be generated in your Google
+            </p>
+            <div class="file-upload">
+                <div class="file-drop-zone" id="file-drop-zone" onclick="document.getElementById('file-input').click()">
+                    <p>Upload Google Slides API JSON</p>
+                    <input type="file" id="file-input" accept=".json" onchange="uploadCredentials()" />
+                </div>
+                <p class="instructions">
+                    Don't have a JSON file? Follow the instructions 
+                    <a href="https://developers.google.com/slides/api/quickstart/python" target="_blank">here</a> 
+                    to create your own Google Slides API key.
+                </p>
+            </div>
+            <button onclick="refreshToken()">Refresh Token</button>
+            <div id="refresh-message" class="message"></div>
+            <div id="upload-message" class="message"></div>
+
+            <!-- Create Presentation -->
+            <h2>Create New Presentation</h2>
+            <p>
+                Provide the client’s intent, a title for the new presentation, and optional background settings.
+                Select whether you want to use a background color, background image, or a theme from an existing presentation.
+            </p>
+            <div class="input-group">
+                <label for="client-intent">Client Intent:</label>
+                <textarea id="client-intent" rows="3" placeholder="Enter client intent"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="presentation-title">Presentation Title:</label>
+                <input id="presentation-title" type="text" placeholder="Enter presentation title">
+            </div>
+
+            <!-- Background or Theme Selection Dropdown -->
+            <div class="input-group">
+                <label for="background-type">Select Background or Theme:</label>
+                <select id="background-type" onchange="toggleBackgroundInput()">
+                    <option value="none">None</option>
+                    <option value="color">Background Color</option>
+                    <option value="image">Background Image</option>
+                </select>
+            </div>
+
+            <!-- Background Color Picker (hidden by default) -->
+            <div class="input-group" id="color-input-group" style="display: none;">
+                <label for="background-color">Background Color:</label>
+                <input id="background-color" type="color">
+            </div>
+
+            <!-- Background Image URL Input (hidden by default) -->
+            <div class="input-group" id="image-input-group" style="display: none;">
+                <label for="background-image-url">Background Image URL:</label>
+                <input id="background-image-url" type="url" placeholder="Enter background image URL">
+            </div>
+
+            <button onclick="createPresentation()">Create Presentation</button>
+            <div id="create-message" class="message"></div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="container right">
+            <!-- Categorize Presentations -->
+            <h2>Categorize Presentations</h2>
+            <h3>Categorize by Presentation IDs</h3>
+            <p>
+                Enter the IDs of existing presentations to add their slides to the database. 
+                These slides will be analyzed, categorized, and tagged, making them part of 
+                the slides bank used for creating new presentations.
+            </p>
+            <div class="input-group">
+                <label for="presentation-ids">Presentation IDs (comma-separated):</label>
+                <textarea id="presentation-ids" rows="4" placeholder="Enter presentation IDs, separated by commas"></textarea>
+            </div>
+            <button onclick="categorizePresentations()">Categorize Presentations</button>
+            <div id="categorize-message" class="message"></div>
+
+            <!-- Categorization by Type -->
+            <h3>Categorize by Type</h3>
+            <p>
+                Enter a presentation type to categorize all presentations of that type. Ensure 
+                the type is already associated with presentation IDs in the database.
+            </p>
+            <div class="input-group">
+                <label for="presentation-type">Presentation Type:</label>
+                <input id="presentation-type" type="text" placeholder="Enter presentation type">
+            </div>
+            <button onclick="categorizePresentationsByType()">Categorize by Type</button>
+            <div id="categorize-type-message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+[
+    {
+        "createSlide": {
+            "objectId": "recommendations_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE_AND_BODY"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "recommendations_title"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "BODY"
+                    },
+                    "objectId": "recommendations_body"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "recommendations_title",
+            "text": "Recommendations/Next Steps:"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "recommendations_body",
+            "text": "- Practice tying your shoe regularly to improve your technique\n- Share this knowledge with others who may need help"
+        }
+    }
+]

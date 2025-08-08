@@ -1,0 +1,48 @@
+[
+    {
+        "createSlide": {
+            "objectId": "how_to_tie_shoe_slide",
+            "slideLayoutReference": {
+                "predefinedLayout": "TITLE"
+            },
+            "placeholderIdMappings": [
+                {
+                    "layoutPlaceholder": {
+                        "type": "TITLE"
+                    },
+                    "objectId": "title_id"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "SUBTITLE"
+                    },
+                    "objectId": "presenter_id"
+                },
+                {
+                    "layoutPlaceholder": {
+                        "type": "DATE_TIME"
+                    },
+                    "objectId": "date_id"
+                }
+            ]
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "title_id",
+            "text": "How to Tie Your Shoe"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "presenter_id",
+            "text": "Presenter: [Your Name]"
+        }
+    },
+    {
+        "insertText": {
+            "objectId": "date_id",
+            "text": "Date: [Date]"
+        }
+    }
+]

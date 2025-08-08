@@ -1,0 +1,237 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #1e2a38; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    flex-direction: column;
+}
+
+/* Main content area (containers for left and right) */
+.main-content {
+    display: flex;
+    flex: 1; /* Takes up all available height except footer */
+    gap: 20px; /* Space between the two containers */
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: #243646; /* Slightly lighter dark blue */
+}
+
+.container.left {
+    border: 1px solid #4a90e2; /* Light blue border */
+}
+
+.container.right {
+    border: 1px solid #357ab7; /* Slightly darker blue border */
+    background-color: #1e2f40; /* Slightly darker background */
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #f0f0f0; /* Light text color */
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4a90e2; /* Underline for headings */
+    padding-bottom: 5px;
+}
+
+/* Input group styling */
+.input-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b8c7d4; /* Light gray text for labels */
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3c5063; /* Subtle border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1e2a38; /* Same as body background */
+    color: #ffffff; /* White text */
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+/* General button styles */
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4a90e2; /* Light blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ab7; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+/* Message styling */
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4caf50; /* Green success messages */
+}
+
+.error {
+    color: #ff6b6b; /* Red error messages */
+}
+
+/* File Upload Section */
+.file-upload {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px;
+    width: 100%; /* Full width of input group */
+}
+
+.file-drop-zone {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    padding: 10px;
+    border: 2px dashed #4a90e2;
+    border-radius: 5px;
+    background-color: #243646;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer; /* Ensures it's clickable */
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    position: relative; /* Ensures proper layering */
+}
+
+.file-drop-zone:hover {
+    background-color: #357ab7;
+}
+
+.file-drop-zone input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Fully transparent but clickable */
+    cursor: pointer;
+}
+
+.instructions {
+    font-size: 0.85rem;
+    color: #b8c7d4; /* Light gray for text */
+    text-align: center;
+    margin-top: 5px;
+}
+
+.instructions a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.instructions a:hover {
+    color: #357ab7;
+    text-decoration: underline;
+}
+
+/* Right container specific styles */
+.container.right .input-group {
+    border: 1px solid #4a90e2; /* Light blue border around each input group */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #1e2f40;
+}
+
+/* Add spacing and hover effect */
+.container.right .input-group:hover {
+    background-color: #243646; /* Slightly lighter background on hover */
+}
+
+/* Token Refresh Section */
+.token-refresh button {
+    width: auto; /* Allow button width to adjust */
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.token-refresh button:hover {
+    background-color: #357ab7;
+    transform: translateY(-2px);
+}
+
+/* Style the color input (color picker) */
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add some padding around the color input group */
+#color-input-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Custom styling for the color wheel handle */
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Add hover effect */
+input[type="color"]:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Focus effect for accessibility */
+input[type="color"]:focus {
+    outline: 2px solid #629584;  /* Sage green focus ring */
+    box-shadow: 0 0 5px rgba(98, 149, 132, 0.7);
+}
